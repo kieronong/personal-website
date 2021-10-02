@@ -1,0 +1,205 @@
+* {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: var(--mblue);
+}
+
+:root {
+  --mblue: hsl(227, 35%, 15%);
+  --mwhite: hsl(0, 0%, 100%);
+  --mcream: var(--mwhite);
+  /* --mcream: #fbf4e1; */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--mcream);
+  z-index: 10;
+}
+
+#logo {
+  line-height: 60px;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 30px auto 30px auto;
+}
+
+#logo-fname {
+  font-size: 50px;
+}
+
+#logo-lname {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+#logo-subtitle {
+  margin: 10px 0px 0px 0px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+}
+
+.nav-link {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--mblue);
+}
+
+.nav-link:hover {
+  color: var(--mwhite);
+  background-color: var(--mblue);
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto 0px auto;
+}
+
+.contact-link {
+  width: 80px;
+  background-color: var(--mcream);
+}
+
+.contact-link:hover {
+  filter: invert(100%);
+}
+
+.contact-logo {
+  display: block;
+  width: 50px;
+  padding: 0px 0px;
+  margin: 10px auto 10px auto;
+}
+
+main {
+  margin-left: 300px;
+  margin-top: 0px;
+  position: relative;
+  bottom: 13px;
+}
+
+#cover {
+  color: var(--mwhite);
+  height: 102vh;
+  margin: 0px;
+  background-image: url("./images/Cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(200px);
+}
+
+.blur {
+  background: rgba(0, 0, 0, 0.154); 
+  backdrop-filter: blur(2px);
+  height: 102vh;
+	width: 100%;
+}
+
+#about {
+  padding: 10px auto 20px auto;
+  background-color: var(--mcream);
+}
+
+#intro-greeting {
+  text-align: center;
+  font-size: 7vw;
+  line-height: 10px;
+}
+
+#intro {
+  display: flex;
+}
+
+#profile-pic {
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+#gallery {
+  background-color: var(--mblue);
+  margin: 0px;
+  padding: 10px 0px 30px 0px;
+}
+
+#gallery-heading {
+  color: var(--mcream);
+  font-size: 5vw;
+  margin: 0px;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+}
+
+#gallery-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery-photo {
+  width: 21vw;
+}
+
+.gallery-photo:hover {
+  filter: brightness(0.5);
+}
+
+
+
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+  }
+  #navbar {
+    flex-direction: row;
+    margin: 0px auto;
+  }
+  #contact {
+    margin: 0vw 3vw 0vw 0vw;
+  }
+  #logo {
+    line-height: 28px;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 5px 0px 0px 3vw;
+  }
+
+  .contact-logo {
+    width: 40px;
+    padding: 0px 0px;
+    margin: 15px auto auto auto;
+  }
+  
+  #logo-fname {
+    font-size: 20px;
+  }
+  
+  #logo-lname {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  main {
+    margin-left: 0px;
+    margin-top: 70px;
+  }
+  #intro-greeting {
+    font-size: 9vw;
+    line-height: 10px;
+  }
+}
