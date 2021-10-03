@@ -14,7 +14,7 @@ export default class Hi extends Component {
                     </div>
                     <nav id="navbar">
                         <a href="#about" className="nav-link">About</a>
-                        <a href="#Gallery" className="nav-link">Gallery</a>
+                        <a href="#gallery" className="nav-link">Gallery</a>
                         <a href="#Experiences" className="nav-link">Experiences</a>
                     </nav>
                     <div id="contact">

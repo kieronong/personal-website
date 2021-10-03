@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Cover extends Component {
+export default class Experiences extends Component {
     render() {
         return (
-            <div id="cover">
+            <div>
+                
             </div>
         )
     }
