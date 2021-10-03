@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react'
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css"
+import axios from 'axios';
 
 const images = [
   {
@@ -17,33 +18,31 @@ const images = [
   },
 ];
 
-export default class MyGallery extends Component {
-    constructor(props) {
-      const [imageData, setImageData] = React.useState(null);
-      }
+export default function MyGallery() {
+  const [imageData, setImageData] = React.useState(null);
 
-    async function fetchData() {
-      const res = await axios.get(
-        'https://api.airtable.com/v0/app4BO89u16yy0GoG/Table%201/recLcPDhdeLrRDU6A',
+  async function fetchData() {
+    const res = await axios.get(
+        'https://api.airtable.com/v0/app4BO89u16yy0GoG/Table%201?maxRecords=3&view=Grid%20view',
         {
             headers: {
                 authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
             },
         }
-      );
-      setBobaData(res.data.records)
-    };
+    );
+    setImageData(res.data.records);
+  }
 
-  
+  React.useEffect(() => {
+    fetchData();
+  }, []);
 
-    render() {
-        return (
-          <div>
-              <ImageGallery 
-              items={images}
-              showThumbnails={false} />
-          </div>
-        )
-    }
+  return (
+      <div>
+        <ImageGallery 
+        items={images}
+        showThumbnails={false} />
+      </div>
+  )
 }
 
