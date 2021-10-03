@@ -21,7 +21,6 @@ export default class MyGallery extends Component {
     constructor(props) {
       const [imageData, setImageData] = React.useState(null);
       }
-    }
 
     async function fetchData() {
       const res = await axios.get(
@@ -33,7 +32,7 @@ export default class MyGallery extends Component {
         }
       );
       setBobaData(res.data.records)
-    }
+    };
 
   
 
@@ -44,7 +43,7 @@ export default class MyGallery extends Component {
               items={images}
               showThumbnails={false} />
           </div>
-        );
+        )
     }
-};
+}
 
