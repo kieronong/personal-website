@@ -1,15 +1,13 @@
-
-
 * {
   font-family: "Montserrat";
   font-size: 20px;
 }
 
 :root {
-  --mblue: hsl(227, 35%, 40%);
+  --mblue: hsl(227, 35%, 18%);
   --mblueaccent: hsl(227, 35%, 8%);
-  --mwhite: hsl(0, 0%, 100%);
-  --mcream: var(--mwhite);
+  --mwhite: hsl(227, 35%, 95%);
+  --mcream: hsl(43, 76%, 100%);
   /* --mcream: #fbf4e1; */
 }
 
@@ -89,38 +87,29 @@ header {
 
 main {
   margin-left: 300px;
-  margin-top: 0px;
   position: relative;
-  bottom: 13px;
   color: var(--mblue);
 }
 
 #cover {
   color: var(--mwhite);
-  height: 102vh;
-  margin: 0px;
+  height: 100vh;
+  margin: 0px 0px;
   background-image: url("./images/Cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(200px);
 }
 
-.blur {
-  background: rgba(0, 0, 0, 0.154); 
-  backdrop-filter: blur(2px);
-  height: 102vh;
-	width: 100%;
-}
-
 #about {
-  padding: 10px auto 20px auto;
-  background-color: var(--mcream);
+  background-color: var(--mwhite);
 }
 
 #intro-greeting {
+  padding: 10px 0px 0px 0px;
   text-align: center;
   font-size: 7vw;
-  line-height: 10px;
+  margin: 0px 0px;
 }
 
 #intro {
@@ -141,7 +130,7 @@ main {
 }
 
 #gallery-heading {
-  color: var(--mcream);
+  color: var(--mwhite);
   font-size: 7vw;
   margin: 0px;
   text-align: center;
@@ -196,25 +185,39 @@ main {
   font-size: 7vw;
   margin: 0px;
   text-align: center;
-  padding: 10px 0px 30px 0px;
+  padding: 20px 0px 30px 0px;
 }
 
 .projects-title {
   font-size: 3vw;
+  margin: 20px 0px 0px 0px;
 }
 
 .projects-container {
   display: flex;
+  align-items: flex-start;
 }
 
 .projects-text-container {
-  margin: 0px;
-  background-color: yellow;
-  line-height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-img {
   width: 300px;
+  padding: 0px 30px 20px 30px;
+}
+
+#pc-1 {
+  background-color: hsl(227, 35%, 92%);
+}
+
+#pc-2 {
+  background-color: hsl(227, 35%, 95%);
+}
+
+#pc-3 {
+  background-color: hsl(227, 35%, 92%);
 }
 
 @media (max-width: 1000px) {
@@ -258,6 +261,5 @@ main {
   }
   #intro-greeting {
     font-size: 9vw;
-    line-height: 10px;
   }
 }

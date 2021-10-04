@@ -13,9 +13,9 @@ export default class Hi extends Component {
                         <div id="logo-lname">ONG</div>
                     </div>
                     <nav id="navbar">
-                        <a href="#about" className="nav-link">About</a>
+                        <a href="#intro-greeting" className="nav-link">About</a>
                         <a href="#gallery" className="nav-link">Gallery</a>
-                        <a href="#Experiences" className="nav-link">Experiences</a>
+                        <a href="#projects" className="nav-link">Experience</a>
                     </nav>
                     <div id="contact">
                         <a href="google.com" className="contact-link">
