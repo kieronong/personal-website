@@ -13,7 +13,8 @@ export default class Projects extends Component {
                         <img className="projects-img" src={codebase} alt="CodeBase"/>
                         <div className="projects-text-container">
                             <h3 className="projects-title">CODEBASE</h3>
-                            <p>Worked with a non-profit to develop the full-stack
+                            <p><strong>Mentored Developer</strong>
+                            <br/><br/>Worked with a non-profit to develop the full-stack
                             environment for a website. Implemented front-end responsive
                             web design and back-end database processing using React and Node.js. </p>
                         </div>
@@ -22,14 +23,16 @@ export default class Projects extends Component {
                         <img className="projects-img" src={advisory} alt="Advisory"/>
                         <div className="projects-text-container">
                             <h3 className="projects-title">ADVISORY SINGAPORE</h3>
-                            <p>Did bla bla bla bla</p>
+                            <p><strong>Educators Roundtable Manager</strong>
+                            <br/><br/>Did bla bla bla bla</p>
                         </div>
                     </div>
                     <div className="projects-container" id="pc-3">
                         <img className="projects-img" src={sana} alt="SANA"/>
                         <div className="projects-text-container">
                             <h3 className="projects-title">SANA</h3>
-                            <p>Did bla bla bla bla</p>
+                            <p><strong>Media Intern</strong>
+                            <br/><br/>Did bla bla bla bla</p>
                         </div>
                     </div>
                 </div>
