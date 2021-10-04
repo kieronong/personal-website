@@ -175,8 +175,20 @@ main {
   padding: 0px 0px 0px 0px;
 }
 
+#exitbutton {
+  position: absolute;
+  right: 0px;
+  font-size: 30px;
+  background-color: var(--mblueaccent);
+  color: white;
+  border: none;
+  z-index: 100;
+}
+
+
+
 #projects {
-  background-color: var(--mwhite);
+  background-color: hsl(227, 35%, 97%);
   color: var(--mblue);
 }
 
@@ -209,15 +221,15 @@ main {
 }
 
 #pc-1 {
-  background-color: hsl(227, 35%, 97%);
-}
-
-#pc-2 {
   background-color: hsl(227, 35%, 94%);
 }
 
-#pc-3 {
+#pc-2 {
   background-color: hsl(227, 35%, 91%);
+}
+
+#pc-3 {
+  background-color: hsl(227, 35%, 88%);
 }
 
 @media (max-width: 1000px) {

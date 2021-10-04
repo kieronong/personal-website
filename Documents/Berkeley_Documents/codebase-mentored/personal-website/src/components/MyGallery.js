@@ -33,7 +33,6 @@ export default function MyGallery(props) {
         result.push({original: record.fields.Attachments[0].url})
       }
     }
-    console.log(result)
     return result;
   }
 

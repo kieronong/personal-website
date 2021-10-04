@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import landscapecover from "./../images/LandscapeCover.jpg"
+import streetcover from "./../images/StreetCover.jpg"
+import urbancover from "./../images/UrbanCover.jpg"
 import update from 'react-addons-update'
 import MyGallery from './MyGallery.js'
 
@@ -13,6 +15,7 @@ export default class Gallery extends Component {
     }
 
     changeview(i) {
+        this.mouseLeave(i)
         this.setState({ galleryview: i })
     }
 
@@ -61,7 +64,7 @@ export default class Gallery extends Component {
                     onMouseLeave={() => this.mouseLeave(0)}
                     onClick={() => this.changeview(1)}>
                         {this.CreateGalleryLabel("Street", 0)}
-                        <img src={landscapecover} alt="Landscape Cover" 
+                        <img src={streetcover} alt="Street Cover" 
                             className="gallery-photo"/>
                     </div>
                     <div class="gallery-image-container"
@@ -77,7 +80,7 @@ export default class Gallery extends Component {
                     onMouseLeave={() => this.mouseLeave(2)}
                     onClick={() => this.changeview(3)}>
                         {this.CreateGalleryLabel("Urban", 2)}
-                        <img src={landscapecover} alt="Landscape Cover" 
+                        <img src={urbancover} alt="Urban Cover" 
                             className="gallery-photo"/>
                     </div>
                 </div>
@@ -88,6 +91,7 @@ export default class Gallery extends Component {
             return_element = 
             <div id="gallery">
                 <h2 id="gallery-heading">GALLERY</h2>
+                <button id="exitbutton" onClick={() => this.changeview(0)}>X</button>
                 <div id="viewgallery">
                     <MyGallery
                     view={this.state.galleryview}
