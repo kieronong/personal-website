@@ -84,9 +84,6 @@ export default class Gallery extends Component {
             </div>
         }
 
-        console.log(this.state.galleryview)
- 
-
         if (this.state.galleryview > 0) {
             return_element = 
             <div id="gallery">
