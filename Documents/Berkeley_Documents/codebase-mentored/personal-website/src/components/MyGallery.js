@@ -9,8 +9,7 @@ export default function MyGallery(props) {
 
   async function fetchData() {
     const view_map = ["Street", "Landscape", "Urban"]
-    console.log(view_map[props.view - 1]);
-    let url = "https://api.airtable.com/v0/app4BO89u16yy0GoG/tbllpIBJa7ZCrfmJh?fields%5B%5D=Attachments&filterByFormula=%7BCategory%7D+%3D+%22Street%22";
+    let url = "https://api.airtable.com/v0/app4BO89u16yy0GoG/tbllpIBJa7ZCrfmJh?fields%5B%5D=Attachments&filterByFormula=%7BCategory%7D+%3D+%22" + view_map[props.view - 1] + "%22";
     const result = await axios.get(
         url,
         {
@@ -19,7 +18,6 @@ export default function MyGallery(props) {
             },
         }
     );
-    console.log(result);
     setImageData(result.data.records);
   }
 
@@ -30,9 +28,12 @@ export default function MyGallery(props) {
 
   function createImages() {
     let result = [];
-    for (let record of imageData) {
-      result.push({original: record.url})
+    if (imageData != null) {
+      for (let record of imageData) {
+        result.push({original: record.fields.Attachments[0].url})
+      }
     }
+    console.log(result)
     return result;
   }
 

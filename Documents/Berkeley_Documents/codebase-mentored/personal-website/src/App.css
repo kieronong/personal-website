@@ -3,11 +3,11 @@
 * {
   font-family: "Montserrat";
   font-size: 20px;
-  color: var(--mblue);
 }
 
 :root {
-  --mblue: hsl(227, 35%, 15%);
+  --mblue: hsl(227, 35%, 40%);
+  --mblueaccent: hsl(227, 35%, 8%);
   --mwhite: hsl(0, 0%, 100%);
   --mcream: var(--mwhite);
   /* --mcream: #fbf4e1; */
@@ -23,6 +23,7 @@ header {
   left: 0;
   background-color: var(--mcream);
   z-index: 10;
+  color: var(--mblue);
 }
 
 #logo {
@@ -91,6 +92,7 @@ main {
   margin-top: 0px;
   position: relative;
   bottom: 13px;
+  color: var(--mblue);
 }
 
 #cover {
@@ -178,12 +180,42 @@ main {
 }
 
 #viewgallery {
-  background-color: var(--mblue);
+  color: yellow;
+  background-color: var(--mblueaccent);
   margin: 0px;
   padding: 0px 0px 0px 0px;
 }
 
+#projects {
+  background-color: var(--mwhite);
+  color: var(--mblue);
+}
 
+#projects-heading {
+  color: var(--mblue);
+  font-size: 7vw;
+  margin: 0px;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+}
+
+.projects-title {
+  font-size: 3vw;
+}
+
+.projects-container {
+  display: flex;
+}
+
+.projects-text-container {
+  margin: 0px;
+  background-color: yellow;
+  line-height: 20px;
+}
+
+.projects-img {
+  width: 300px;
+}
 
 @media (max-width: 1000px) {
   header {
