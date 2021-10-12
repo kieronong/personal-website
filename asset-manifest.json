@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.10abdeff.chunk.css",
+    "main.js": "/personal-website/static/js/main.d1621bb4.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.d1621bb4.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.cd1ba04a.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.cd1ba04a.js.map",
+    "static/css/2.6cd54866.chunk.css": "/personal-website/static/css/2.6cd54866.chunk.css",
+    "static/js/2.40a5b9ce.chunk.js": "/personal-website/static/js/2.40a5b9ce.chunk.js",
+    "static/js/2.40a5b9ce.chunk.js.map": "/personal-website/static/js/2.40a5b9ce.chunk.js.map",
+    "static/js/3.9b4d5e0f.chunk.js": "/personal-website/static/js/3.9b4d5e0f.chunk.js",
+    "static/js/3.9b4d5e0f.chunk.js.map": "/personal-website/static/js/3.9b4d5e0f.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/2.6cd54866.chunk.css.map": "/personal-website/static/css/2.6cd54866.chunk.css.map",
+    "static/css/main.10abdeff.chunk.css.map": "/personal-website/static/css/main.10abdeff.chunk.css.map",
+    "static/js/2.40a5b9ce.chunk.js.LICENSE.txt": "/personal-website/static/js/2.40a5b9ce.chunk.js.LICENSE.txt",
+    "static/media/Advisory.a50c6aaf.png": "/personal-website/static/media/Advisory.a50c6aaf.png",
+    "static/media/Codebase.a3574a31.png": "/personal-website/static/media/Codebase.a3574a31.png",
+    "static/media/App.css": "/personal-website/static/media/Cover.65a56b58.jpg",
+    "static/media/LandscapeCover.3c93368f.jpg": "/personal-website/static/media/LandscapeCover.3c93368f.jpg",
+    "static/media/Linkedin.eeeb4173.png": "/personal-website/static/media/Linkedin.eeeb4173.png",
+    "static/media/index.css": "/personal-website/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/Profile.8984f938.jpg": "/personal-website/static/media/Profile.8984f938.jpg",
+    "static/media/SANA.3e04d68c.png": "/personal-website/static/media/SANA.3e04d68c.png",
+    "static/media/StreetCover.0bf25402.jpg": "/personal-website/static/media/StreetCover.0bf25402.jpg",
+    "static/media/UrbanCover.ec098c5f.jpg": "/personal-website/static/media/UrbanCover.ec098c5f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd1ba04a.js",
+    "static/css/2.6cd54866.chunk.css",
+    "static/js/2.40a5b9ce.chunk.js",
+    "static/css/main.10abdeff.chunk.css",
+    "static/js/main.d1621bb4.chunk.js"
+  ]
+}
