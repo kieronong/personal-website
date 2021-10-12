@@ -147,6 +147,7 @@ main {
 }
 
 .gallery-label {
+  display: none;
   font-size: 20px;
   color: var(--mwhite);
   position: absolute;
@@ -170,6 +171,10 @@ main {
 
 .gallery-photo:hover {
   filter: brightness(50%);
+}
+
+.gallery-photo:hover ~ .gallery-label {
+  display: block;
 }
 
 #viewgallery {
